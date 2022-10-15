@@ -1,0 +1,314 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw
+}
+
+.bg{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 516px   ;
+}
+
+div{
+    text-align: left;
+}
+
+.cipherSelect{
+    display: flex;
+    flex-direction: column;
+    gap : 3vh;
+    border: 2px solid black;
+}
+
+span{
+    display: inline-block
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background: url("https://c4.wallpaperflare.com/wallpaper/861/256/993/gravity-falls-illuminati-pentagram-bill-cipher-wallpaper-preview.jpg");
+    background-size: cover;
+    
+}
+
+.element{
+    transition: 200ms;
+    background: white;
+    padding: 2vw;
+    border-radius: 10px;
+    border: 5px solid rgb(39, 39, 39);
+}
+
+.element textarea{
+    resize: none;
+}
+
+.cipherSelect{
+    padding: 3vh 5vw;
+}
+
+@media only screen and (max-width: 976px){
+    .container{
+        flex-direction: column;
+        gap:5vh;
+        min-height: 516px;
+    }
+}
+
+button{
+	margin: 0px 5px;
+	transition: all 200ms;
+	border-radius: 0px;
+	border: none;
+}
+
+button:hover{
+	transform: scale(1.1);
+	background-color:  #E34F00;
+	color: #FFFFFF;
+	border-color: #E34F00 ;
+}
+
+select{
+    border-radius: 30px;
+    border:none;
+    padding: 8px;
+    background-color: rgb(26, 21, 21);
+    opacity: 80%;
+    color:white;
+}
+
+option{
+    background-color: rgb(231, 124, 10);
+    opacity: 75%;
+    color: black;
+}
+
+input{
+    border-radius: 20px;
+    border:none;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.element:hover{
+    transition: 200ms;
+    border: 8px solid rgb(39, 39, 39);
+}
+
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+.container-fluid{
+	justify-content: flex-start;
+}
+
+.navi{
+	background-color: rgba(255, 255, 255, 1);
+	display: flex;
+	justify-content: flex-start;
+    align-content: flex-start;
+    padding:2vh;
+    font-family: 'Silkscreen', cursive;
+    position: sticky;
+}
+
+.navi span{
+	height:  100%;
+	text-decoration: none;
+	/* color: #E34F00; */
+	background-color: #FFFFFF;
+	transition: all 1s;
+	padding: 5px;
+	margin: 0px 5px;
+    font-family: 'Silkscreen', cursive;
+    font-size: xx-large;
+}
+
+.navi span:hover{
+	/*background-color: #E34F00;*/
+	/*color:  #FAFAFA;*/
+	transform: scale(1.1);
+	/* text-decoration: underline solid orangered 3px ; */
+    color: rgb(249, 208, 27);
+    content: "cpeyhr";
+}
+
+.navbar>.container-fluid{
+	justify-content: flex-start;
+}
+
+textarea{
+    resize: none;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.nouline{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:200ms;
+    border: 1px solid rgb(17, 192, 232);
+    border-radius: 50px;
+}
+
+.nouline:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition:200ms;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+}
+
+.dabba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+    /* width: 50 vw; */
+    margin:400px;
+    padding: 30px;
+    gap: 20px;  
+    text-align: justify;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+.button {
+    position: relative;
+    padding: 5px;
+	margin: 0px 5px;
+    border: 2px solid #FFF;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 2em;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-family: 'raleway', sans-serif;
+}
+
+.button span {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.button:before,
+.button:after {
+    content: '';
+    position: absolute;
+    top: 0.67em;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+.button:before {
+    content: attr(data-hover);
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+}
+
+/* :after */
+
+.button:after {
+    content: attr(data-active);
+    -webkit-transform: translate(150%,0);
+    -moz-transform: translate(150%,0);
+    -ms-transform: translate(150%,0);
+    -o-transform: translate(150%,0);
+    transform: translate(150%,0);
+}
+
+/* Span on :hover and :active */
+
+.button:hover span,
+.button:active span {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+/*  
+    We show :before pseudo-element on :hover 
+    and :after pseudo-element on :active 
+*/
+
+.button:hover:before,
+.button:active:after {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+/* 
+  We hide :before pseudo-element on :active
+*/
+
+.button:active:before {
+    -webkit-transform: translate(-150%,0);
+    -moz-transform: translate(-150%,0);
+    -ms-transform: translate(-150%,0);
+    -o-transform: translate(-150%,0);
+    transform: translate(-150%,0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
